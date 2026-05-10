@@ -83,7 +83,7 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex text-center items-center justify-center">
           <a
             href="/asif-wani-cv.pdf"
             download="Asif_Wani_Resume.pdf"
