@@ -93,7 +93,7 @@ export default function SkillsPage() {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
+              // variants={itemVariants}
               whileHover={{ scale: 1.05, translateY: -5 }}
               className="bg-white/10 dark:bg-black/20 border border-white/20 dark:border-white/10 backdrop-blur-md rounded-2xl p-6 flex flex-col items-center justify-center gap-4 shadow-lg hover:shadow-blue-500/20 transition-all cursor-default"
             >
