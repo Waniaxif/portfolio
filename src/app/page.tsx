@@ -63,7 +63,11 @@ export default function HomePage() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row items-center justify-center gap-6"
         >
-          <Link href="/resume.pdf" target="_blank" prefetch={false}>
+          <a
+            href="/asif-cv.pdf"
+            download="Asif_Wani_Resume.pdf"
+            className="w-full sm:w-auto"
+          >
             <Button
               size="large"
               type="primary"
@@ -73,7 +77,7 @@ export default function HomePage() {
             >
               Download Resume
             </Button>
-          </Link>
+          </a>
           <Link href="/contact">
             <Button
               size="large"
