@@ -115,7 +115,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
+      {/* 
       <Tooltip title="Scroll to Top" placement="left">
         <button
           onClick={scrollToTop}
@@ -123,7 +123,7 @@ export default function Footer() {
         >
           <MdArrowUpward size={24} />
         </button>
-      </Tooltip>
+      </Tooltip> */}
     </footer>
   );
 }
