@@ -30,44 +30,36 @@ export default function Footer() {
             web experiences.
           </p>
           <div className="flex gap-4 mt-2">
-            <Tooltip title="GitHub">
-              <a
-                href="https://github.com/waniaxif"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
-              >
-                <FaGithub size={20} />
-              </a>
-            </Tooltip>
-            <Tooltip title="LinkedIn">
-              <a
-                href="https://linkedin.com/in/waniaxif"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
-              >
-                <FaLinkedin size={20} />
-              </a>
-            </Tooltip>
-            <Tooltip title="WhatsApp">
-              <a
-                href="https://wa.me/923365370284"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
-              >
-                <FaWhatsapp size={20} />
-              </a>
-            </Tooltip>
-            <Tooltip title="Email">
-              <a
-                href="mailto:khawaja.asif.wani@gmail.com"
-                className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
-              >
-                <MdEmail size={20} />
-              </a>
-            </Tooltip>
+            <a
+              href="https://github.com/waniaxif"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="https://linkedin.com/in/waniaxif"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://wa.me/923365370284"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
+            >
+              <FaWhatsapp size={20} />
+            </a>
+            <a
+              href="mailto:khawaja.asif.wani@gmail.com"
+              className="w-10 h-10 rounded-full glass-panel glass-panel-dark flex items-center justify-center hover:text-blue-500 hover:-translate-y-1 transition-all"
+            >
+              <MdEmail size={20} />
+            </a>
           </div>
         </div>
 
