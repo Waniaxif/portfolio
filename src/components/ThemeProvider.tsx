@@ -43,9 +43,13 @@ export default function ThemeProvider({
     const root = document.documentElement;
     if (isDark) {
       root.classList.add("dark");
+      root.style.colorScheme = "dark";
+      localStorage.setItem("theme", "dark");
       root.classList.remove("light");
     } else {
       root.classList.remove("dark");
+      root.style.colorScheme = "light";
+      // localStorage.setItem("theme", "light");
       root.classList.add("light");
     }
   }, [isDark, mounted]);
