@@ -84,15 +84,21 @@ export default function AboutPage() {
         </div>
 
         <div className="flex justify-center">
-          <Button
-            size="large"
-            type="primary"
-            shape="round"
-            icon={<MdDownload size={20} />}
-            className="h-14 px-10 text-lg bg-blue-600 hover:bg-blue-500 border-none shadow-lg shadow-blue-500/30"
+          <a
+            href="/asif-wani-cv.pdf"
+            download="Asif_Wani_Resume.pdf"
+            className="w-full sm:w-auto"
           >
-            Download CV
-          </Button>
+            <Button
+              size="large"
+              type="primary"
+              shape="round"
+              icon={<MdDownload size={20} />}
+              className="h-14 px-10 text-lg bg-blue-600 hover:bg-blue-500 border-none shadow-lg shadow-blue-500/30"
+            >
+              Download Resume
+            </Button>
+          </a>
         </div>
       </motion.div>
     </section>
