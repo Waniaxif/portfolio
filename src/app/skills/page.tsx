@@ -64,7 +64,7 @@ export default function SkillsPage() {
   };
 
   return (
-    <section className="min-h-screen pt-16 pb-20 px-14 md:px-8 flex flex-col items-center relative z-10">
+    <section className="min-h-screen pt-16 pb-14 px-4 md:px-8 flex flex-col items-center relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
