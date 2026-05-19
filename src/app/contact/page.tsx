@@ -111,12 +111,14 @@ export default function ContactPage() {
               {/* Profile Section */}
               <div className="flex flex-col items-center hover:shadow-emerald-900/50 hover:dark:shadow-emerald-300/30 hover:shadow-7xl transition-colors gap-6 glass-panel glass-panel-dark p-6 rounded-3xl">
                 <div className="flex items-center gap-4 ">
-                  <Avatar
-                    size={80}
-                    className="bg-blue-600 text-2xl font-bold flex items-center justify-center"
-                  >
-                    AW
-                  </Avatar>
+                  <div className="w-20 h-20 ">
+                    <Avatar
+                      size={70}
+                      className="bg-blue-600  text-2xl font-bold flex items-center justify-center"
+                    >
+                      AW
+                    </Avatar>
+                  </div>
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                       Asif Wani
