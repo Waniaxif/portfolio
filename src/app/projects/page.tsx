@@ -111,8 +111,8 @@ export default function ProjectsPage() {
             >
               {/* Display Area (Image Placeholder) */}
               <div className="relative h-60 w-full bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/40 dark:to-indigo-900/40 flex items-center justify-center overflow-hidden">
-                <span className="text-blue-500/50 dark:text-blue-300/30 font-bold text-2xl tracking-widest">
-                  PROJECT DISPLAY
+                <span className=" text-blue-500/50 dark:text-blue-300/30 font-bold text-2xl tracking-widest">
+                  COMING SOON
                 </span>
 
                 {/* Hover Overlay with Buttons */}
