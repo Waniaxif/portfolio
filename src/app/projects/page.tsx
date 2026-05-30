@@ -26,42 +26,42 @@ export default function ProjectsPage() {
       githubUrl: "#",
       liveUrl: "#",
     },
-    {
-      id: 2,
-      title: "Portfolio Template V1",
-      description:
-        "A highly customizable and animated portfolio template designed for creative professionals.",
-      labels: ["React", "Framer Motion", "CSS Modules"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      id: 3,
-      title: "Real Estate Property Finder",
-      description:
-        "A platform allowing users to search, filter, and view property listings with integrated map services.",
-      labels: ["Next.js", "Ant Design", "REST API"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      id: 4,
-      title: "Task Management App",
-      description:
-        "A drag-and-drop Kanban board application for teams to collaborate and track project progress.",
-      labels: ["React", "TypeScript", "Tailwind CSS"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      id: 5,
-      title: "Healthcare Booking System",
-      description:
-        "A patient portal for booking appointments, viewing medical history, and contacting doctors.",
-      labels: ["Next.js", "Node.js", "MySQL"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
+    // {
+    //   id: 2,
+    //   title: "Portfolio Template V1",
+    //   description:
+    //     "A highly customizable and animated portfolio template designed for creative professionals.",
+    //   labels: ["React", "Framer Motion", "CSS Modules"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    // },
+    // {
+    //   id: 3,
+    //   title: "Real Estate Property Finder",
+    //   description:
+    //     "A platform allowing users to search, filter, and view property listings with integrated map services.",
+    //   labels: ["Next.js", "Ant Design", "REST API"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    // },
+    // {
+    //   id: 4,
+    //   title: "Task Management App",
+    //   description:
+    //     "A drag-and-drop Kanban board application for teams to collaborate and track project progress.",
+    //   labels: ["React", "TypeScript", "Tailwind CSS"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Healthcare Booking System",
+    //   description:
+    //     "A patient portal for booking appointments, viewing medical history, and contacting doctors.",
+    //   labels: ["Next.js", "Node.js", "MySQL"],
+    //   githubUrl: "#",
+    //   liveUrl: "#",
+    // },
   ];
 
   return (
@@ -142,7 +142,7 @@ export default function ProjectsPage() {
                     rel="noreferrer"
                     initial={{ y: 20, opacity: 0 }}
                     whileHover={{ scale: 1.05 }}
-                    className="group-hover:opacity-100 group-hover:y-0 transition-all duration-300 delay-150"
+                    className="group-hover:opacity-100  group-hover:y-0 transition-all duration-300 delay-150"
                   >
                     <Button
                       type="primary"
