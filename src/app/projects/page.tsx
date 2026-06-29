@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "antd";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Button, Tooltip } from "antd";
+import { FaGithub, FaExternalLinkAlt, FaEye } from "react-icons/fa";
+import Image from "next/image";
 
 interface Project {
   id: number;
@@ -12,6 +13,7 @@ interface Project {
   labels: string[];
   githubUrl: string;
   liveUrl: string;
+  imageUrl?: string; // Added image property
 }
 
 export default function ProjectsPage() {
@@ -19,12 +21,13 @@ export default function ProjectsPage() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Dashboard",
+      title: "Restaurant Website",
       description:
-        "A comprehensive admin dashboard for managing inventory, sales, and users. Features real-time charts and dark mode.",
+        "A comprehensive Restaurant Website for managing and ordering the food. Features real-time display and checkout system.",
       labels: ["Next.js", "TypeScript", "Tailwind CSS", "Redux"],
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://restaurant-os-kohl.vercel.app/",
+      liveUrl: "https://restaurant-os-kohl.vercel.app/",
+      imageUrl: "/restaurant-os.png", // Update this path to your Vercel screenshot in the public folder
     },
     // {
     //   id: 2,
@@ -109,15 +112,58 @@ export default function ProjectsPage() {
               transition={{ delay: index * 0.1 }}
               className="glass-panel glass-panel-dark rounded-3xl overflow-hidden flex flex-col h-full group"
             >
-              {/* Display Area (Image Placeholder) */}
+              {/* Display Area (Image / Placeholder) */}
               <div className="relative h-60 w-full bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/40 dark:to-indigo-900/40 flex items-center justify-center overflow-hidden">
-                <span className=" text-blue-500/50 dark:text-blue-300/30 font-bold text-2xl tracking-widest">
+                {/* Dynamically render the image if it exists */}
+                {project.imageUrl && (
+                  <Image
+                    width={500}
+                    height={300}
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover object-top"
+                  />
+                )}
+
+                {/* <span className=" text-blue-500/50 dark:text-blue-300/30 font-bold text-2xl tracking-widest">
                   COMING SOON
-                </span>
+                </span> */}
 
                 {/* Hover Overlay with Buttons */}
                 <div className="absolute inset-0 bg-white/60 dark:bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 z-20">
+                  {/* Eye Button now links directly to liveUrl with updated tooltip */}
+                  <Tooltip title="Live Preview ">
+                    <Button
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      type="default"
+                      shape="round"
+                      icon={<FaEye />}
+                      size="large"
+                      className="!bg-white !text-black border-none hover:!text-green-600 font-medium flex items-center justify-center "
+                    />
+                  </Tooltip>
                   <motion.a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    initial={{ y: 20, opacity: 0 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="group-hover:opacity-100 group-hover:y-0 transition-all duration-300 delay-75"
+                  >
+                    {/* <Tooltip title="Live Preview ">
+                      <Button
+                        type="default"
+                        shape="round"
+                        icon={<FaEye />}
+                        size="large"
+                        className="!bg-white !text-black border-none hover:!text-green-600 font-medium flex items-center justify-center "
+                      />
+                    </Tooltip> */}
+                  </motion.a>
+
+                  {/* <motion.a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noreferrer"
@@ -134,9 +180,9 @@ export default function ProjectsPage() {
                     >
                       Code
                     </Button>
-                  </motion.a>
+                  </motion.a> */}
 
-                  <motion.a
+                  {/* <motion.a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noreferrer"
@@ -153,7 +199,7 @@ export default function ProjectsPage() {
                     >
                       Live Preview
                     </Button>
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
 
