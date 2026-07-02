@@ -24,20 +24,35 @@ export default function ProjectsPage() {
       title: "Restaurant Website",
       description:
         "A comprehensive Restaurant Website for managing and ordering the food. Features real-time display and checkout system.",
-      labels: ["Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+      labels: [
+        "Next.js",
+        "TypeScript",
+        "Ant Design",
+        "REST API",
+        "Tailwind CSS",
+        "Redux",
+      ],
       githubUrl: "https://restaurant-os-kohl.vercel.app/",
       liveUrl: "https://restaurant-os-kohl.vercel.app/",
       imageUrl: "/restaurant-os.png", // Update this path to your Vercel screenshot in the public folder
     },
-    // {
-    //   id: 2,
-    //   title: "Portfolio Template V1",
-    //   description:
-    //     "A highly customizable and animated portfolio template designed for creative professionals.",
-    //   labels: ["React", "Framer Motion", "CSS Modules"],
-    //   githubUrl: "#",
-    //   liveUrl: "#",
-    // },
+    {
+      id: 2,
+      title: "POS System",
+      description:
+        "A website based point of sale system for managing inventory and processing transactions.",
+      labels: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Ant Design",
+        "REST API",
+        "Redux",
+      ],
+      githubUrl: "#",
+      liveUrl: "https://pos-erp-system-pos-chi.vercel.app/",
+      imageUrl: "/pos.png", // Update this path to your Vercel screenshot in the public folder
+    },
     // {
     //   id: 3,
     //   title: "Real Estate Property Finder",
